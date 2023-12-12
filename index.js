@@ -149,4 +149,93 @@
 
 // const result = squareSum(exampleArray)
 // console.log(result)
+// **1. repeat string n times 
+// function repeatStr (n, s) {
+//   return s.repeat(n)
+// }
+
+// console.log(repeatStr(3,"hello!"))
+
+// ** 2. Write a program that finds the summation of every number from 1 to num. 
+// for example 5 is number so (1+2+3+4+5) = 15 
+
+// function summation(n) {
+//   let sum = 0 ;
+//   for (let i=0 ; i <= n; i++){
+    
+//     sum += i;
+//   }
+//   return sum ;
+// }
+
+// console.log(summation(5))
+
+
+
+// ** 3. remove white spaces from given string 
+
+// function remove(n) {
+//   return n.replaceAll(' ','')
+// }
+
+// console.log(remove("8 j 8   mBliB8g  imjB8B8  jl  B"))
+
+//trim vs replaceAll(' ','')
+// The replaceAll(' ', '') method in JavaScript replaces all spaces in a string with an empty string, effectively removing all spaces. However, trim() works differently.
+
+// The trim() method in JavaScript removes whitespace from both ends of a string but doesn't remove spaces within the string itself. If you want to remove all spaces within a string, trim() alone won't suffice. You would need to use replaceAll(' ', '') or a similar method.
+
+
+
+
+// ** 4 count the sheeps only true 
+
+// function countSheeps(sheep) {
+//   let val = 0
+//   for(let i =0; i < sheep.length; i++) {
+    
+//     if(sheep[i] === true) {
+//      val++
+//     }
+//   }
+//     return val
+// }
+// // Test case
+// let sheeps = [true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, false, false, true, true];
+// console.log(countSheeps(sheeps)); // Output will be the count of true values in the array
+
+// for foreach map 
+// However, using map() in this context isn't ideal because map() is used to transform each element of an array and return a new array based on the transformation. In this case, you're not transforming the elements but rather counting occurrences, so forEach() is a more suitable choice.
+
+// The forEach() method iterates through each element in the array, and for each element, it checks if it's equal to true. If it is, it increments the count variable. Finally, it returns the total count of true values.
+
+// for Loop:
+// The for loop is a basic looping construct in most programming languages, including JavaScript. It allows you to execute a block of code repeatedly based on a condition.
+
+// forEach() Method:
+// forEach() is a method available for arrays in JavaScript. It's a higher-order function that executes a provided function once for each array element.
+
+// Differences Summary:
+// Syntax: for loop has more explicit syntax, while forEach() uses a callback function.
+// Control: for loop provides more control over iteration variables and flow.
+// Use Cases: for loop is versatile and can be used in various looping scenarios. forEach() is specific to iterating over arrays and performs an operation on each element without explicitly managing the index.
+// Generally, if you need to simply iterate over elements in an array and perform an operation on each element, forEach() is often more concise and preferred. However, if you require more control or need to perform different types of iterations, the for loop might be a better choice.
+
+//** 5 find the smallest integer from array 
+
+// function min (arr) {
+// return Math.min(...arr)
+// }
+// console.log(min([-900,2,9,12,10,900]))
+// spread operator vs rest operator 
+
+//** 6 convert string into number
+// const stringToNumber = function(str){
+  
+//  return parseInt(str);
+// }
+
+
+
+
 
